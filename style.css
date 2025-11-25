@@ -1,0 +1,111 @@
+/* --- Custom Stylesheet (CSS Murni) --- */
+
+/* Aturan Global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Latar belakang yang lebih lembut */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Container Utama */
+.container {
+    max-width: 1000px; /* Lebar maksimum untuk desktop */
+    margin: 0 auto;
+    padding: 20px 24px; /* Padding longgar di semua sisi */
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2em; /* Ukuran font besar */
+    color: #1e3a8a; /* Warna biru gelap */
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 1.1em;
+    color: #6b7280;
+}
+
+/* Layout Grid Fitur */
+.feature-grid {
+    display: grid;
+    gap: 20px; /* Jarak antar kartu */
+    grid-template-columns: 1fr; /* Default 1 kolom untuk mobile */
+}
+
+/* Media Queries untuk Responsif */
+@media (min-width: 640px) { /* Untuk tablet */
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    }
+}
+
+@media (min-width: 1024px) { /* Untuk desktop */
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    }
+}
+
+/* Kartu Fitur */
+.feature-card {
+    display: block; /* Penting agar seluruh area kartu bisa diklik */
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #3b82f6; /* Garis biru di atas */
+    text-decoration: none; /* Hilangkan garis bawah link */
+    
+    /* Transisi untuk efek hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Geser ke atas */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15); /* Bayangan lebih besar */
+    border-top-color: #1e3a8a; /* Ubah warna garis */
+}
+
+.card-icon {
+    font-size: 1.8em;
+    margin-right: 12px;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.feature-card h2 {
+    font-size: 1.25em;
+    color: #1f2937;
+    margin: 0;
+}
+
+.feature-card p {
+    color: #6b7280;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 16px;
+    color: #9ca3af;
+    font-size: 0.85em;
+}

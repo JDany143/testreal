@@ -1,0 +1,152 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f5;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #7f8c8d;
+}
+
+/* Input dan Tombol */
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+#searchInput {
+    flex-grow: 1;
+    padding: 12px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+#searchButton {
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #2980b9;
+}
+
+/* Area Hasil */
+.loading {
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    color: #e67e22;
+    display: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.results-display {
+    border-top: 1px solid #ecf0f1;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.initial-message {
+    text-align: center;
+    padding: 30px;
+    color: #95a5a6;
+    font-style: italic;
+}
+
+.image-display {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.device-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Styling Spesifikasi */
+.spec-group {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ecf0f1;
+}
+
+.spec-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #e74c3c; /* Warna untuk judul grup (seperti ikon di kode WA Anda) */
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e74c3c;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spec-item {
+    padding: 3px 0;
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+.spec-item strong {
+    color: #34495e;
+}
+
+.error-message {
+    color: #c0392b;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-color: #fcecec;
+    border-radius: 8px;
+}

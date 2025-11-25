@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Spesifikasi GSMArena</title>
+    <link rel="stylesheet" href="/style_search">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+            <h1>🔍 Pencarian Spesifikasi Perangkat</h1>
+            <p>Masukkan nama perangkat (contoh: Samsung Galaxy S23 Ultra, Infinix GT 30 Pro) untuk mendapatkan spesifikasi lengkap dari GSMArena.</p>
+        </header>
+
+        <!-- Form Input Pencarian -->
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Masukkan nama perangkat..." required>
+            <button id="searchButton">Cari Spesifikasi</button>
+        </div>
+
+        <!-- Area Tampilan Hasil -->
+        <div id="loadingIndicator" class="loading hidden">Memuat...</div>
+        <div id="imageDisplay" class="image-display">
+            <!-- Gambar akan ditampilkan di sini -->
+        </div>
+        <div id="resultsDisplay" class="results-display">
+            <!-- Hasil spesifikasi akan ditampilkan di sini -->
+            <p class="initial-message">Hasil spesifikasi akan muncul setelah pencarian.</p>
+        </div>
+        
+    </div>
+    
+    <!-- 2. Hubungkan Logika JavaScript ANDA -->
+    <script src="/data_search"></script>
+
+</body>
+</html>
+
